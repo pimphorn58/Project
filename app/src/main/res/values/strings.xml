@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ProjectPP</string>
+    <string name="title_activity_teach">teach</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="name_IT">Information Technology</string>
+
+    <!--login-->
+    <string name="user">ชื่อผู้ใช้งาน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="cancel">ยกเลิก</string>
+
+    <!--first-->
+    <string name="staff">สำหรับอาจารย์/บุคลากร</string>
+    <string name="find">ค้นหาครุภัณฑ์</string>
+    <string name="scan">สแกน</string>
+
+    <!--three-->
+    <string name="title3">หน้าแรก</string>
+    <string name="name">NAME</string>
+
+    <string name="menu_home">หน้าแรก</string>
+    <string name="menu_obj">ครุภัณฑ์ที่รับผิดชอบ</string>
+    <string name="menu_exit">ออกจากระบบ</string>
+
+    <!--five-->
+    <string name="title5">ครุภัณฑ์ที่รับผิดชอบ</string>
+    <!--CardView-->
+    <string name="id_obj">หมายเลขครุภัณฑ์</string>
+    <string name="employee">ผู้รับผิดชอบ</string>
+    <string name="store">ห้องเก็บ</string>
+    <string name="number">โทร</string>
+    <string name="fordb">something by DB</string>
+
+    <!--search-->
+    <string name="title7">ค้นหาครุภัณฑ์</string>
+    <string name="sea">secrch</string>
+
+
+    <string name="todo">TODO</string>
+
+    <string name="url_laravel">4f287fb6</string>
+    <string name="url_image">b05aba52</string>
+
+
+</resources>

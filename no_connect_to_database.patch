@@ -1,0 +1,329 @@
+Index: app/src/main/res/menu/teasch_scan.xml
+===================================================================
+--- app/src/main/res/menu/teasch_scan.xml	(date 1561458304000)
++++ app/src/main/res/menu/teasch_scan.xml	(date 1561458304000)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto">
+-    <item
+-        android:id="@+id/action_settings"
+-        android:orderInCategory="100"
+-        android:title="@string/action_settings"
+-        app:showAsAction="never" />
+-</menu>
+Index: app/src/main/res/menu/teasch_scan_drawer.xml
+===================================================================
+--- app/src/main/res/menu/teasch_scan_drawer.xml	(date 1561458304000)
++++ app/src/main/res/menu/teasch_scan_drawer.xml	(date 1561458304000)
+@@ -1,38 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    tools:showIn="navigation_view">
+-
+-    <group android:checkableBehavior="single">
+-        <item
+-            android:id="@+id/nav_home"
+-            android:icon="@drawable/ic_menu_camera"
+-            android:title="@string/menu_home" />
+-        <item
+-            android:id="@+id/nav_gallery"
+-            android:icon="@drawable/ic_menu_gallery"
+-            android:title="@string/menu_gallery" />
+-        <item
+-            android:id="@+id/nav_slideshow"
+-            android:icon="@drawable/ic_menu_slideshow"
+-            android:title="@string/menu_slideshow" />
+-        <item
+-            android:id="@+id/nav_tools"
+-            android:icon="@drawable/ic_menu_manage"
+-            android:title="@string/menu_tools" />
+-    </group>
+-
+-    <item android:title="Communicate">
+-        <menu>
+-            <item
+-                android:id="@+id/nav_share"
+-                android:icon="@drawable/ic_menu_share"
+-                android:title="@string/menu_share" />
+-            <item
+-                android:id="@+id/nav_send"
+-                android:icon="@drawable/ic_menu_send"
+-                android:title="@string/menu_send" />
+-        </menu>
+-    </item>
+-
+-</menu>
+Index: app/src/main/res/menu/total_obj.xml
+===================================================================
+--- app/src/main/res/menu/total_obj.xml	(date 1561458304000)
++++ app/src/main/res/menu/total_obj.xml	(date 1561458304000)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto">
+-    <item
+-        android:id="@+id/action_settings"
+-        android:orderInCategory="100"
+-        android:title="@string/action_settings"
+-        app:showAsAction="never" />
+-</menu>
+Index: app/src/main/res/menu/total_obj_drawer.xml
+===================================================================
+--- app/src/main/res/menu/total_obj_drawer.xml	(date 1561458304000)
++++ app/src/main/res/menu/total_obj_drawer.xml	(date 1561458304000)
+@@ -1,38 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    tools:showIn="navigation_view">
+-
+-    <group android:checkableBehavior="single">
+-        <item
+-            android:id="@+id/nav_home"
+-            android:icon="@drawable/ic_menu_camera"
+-            android:title="@string/menu_home" />
+-        <item
+-            android:id="@+id/nav_gallery"
+-            android:icon="@drawable/ic_menu_gallery"
+-            android:title="@string/menu_gallery" />
+-        <item
+-            android:id="@+id/nav_slideshow"
+-            android:icon="@drawable/ic_menu_slideshow"
+-            android:title="@string/menu_slideshow" />
+-        <item
+-            android:id="@+id/nav_tools"
+-            android:icon="@drawable/ic_menu_manage"
+-            android:title="@string/menu_tools" />
+-    </group>
+-
+-    <item android:title="Communicate">
+-        <menu>
+-            <item
+-                android:id="@+id/nav_share"
+-                android:icon="@drawable/ic_menu_share"
+-                android:title="@string/menu_share" />
+-            <item
+-                android:id="@+id/nav_send"
+-                android:icon="@drawable/ic_menu_send"
+-                android:title="@string/menu_send" />
+-        </menu>
+-    </item>
+-
+-</menu>
+Index: app/src/main/res/layout/app_bar_total_obj.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/app_bar_total_obj.xml	(date 1561458304000)
++++ app/src/main/res/layout/app_bar_total_obj.xml	(date 1561522323808)
+@@ -21,7 +21,7 @@
+ 
+     </android.support.design.widget.AppBarLayout>
+ 
+-    <include layout="@layout/content_teach" />
++    <include layout="@layout/content_total_obj" />
+ 
+ 
+ </android.support.design.widget.CoordinatorLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/content_total_obj.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/content_total_obj.xml	(date 1561458304000)
++++ app/src/main/res/layout/content_total_obj.xml	(date 1561521084971)
+@@ -5,7 +5,7 @@
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+-    tools:context=".TeachActivity"
++    tools:context=".TotalObjActivity"
+     tools:layout_editor_absoluteY="56dp"
+     tools:showIn="@layout/app_bar_total_obj">
+ 
+Index: app/src/main/res/layout/total_obj.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/total_obj.xml	(date 1561458304000)
++++ app/src/main/res/layout/total_obj.xml	(date 1561521856365)
+@@ -20,6 +20,6 @@
+         android:layout_gravity="start"
+         android:fitsSystemWindows="true"
+         app:headerLayout="@layout/nav_header_teach"
+-        app:menu="@menu/total_obj_drawer" />
++        app:menu="@menu/activity_teach_drawer" />
+ 
+ </android.support.v4.widget.DrawerLayout>
+Index: app/src/main/java/com/example/friend_finalproj/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/friend_finalproj/MainActivity.java	(date 1561458304000)
++++ app/src/main/java/com/example/friend_finalproj/MainActivity.java	(date 1561521084934)
+@@ -34,6 +34,8 @@
+         butt_scan.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
++                Intent gotoscan = new Intent(MainActivity.this,TeaschScanActivity.class);
++                startActivity(gotoscan);
+ 
+             }
+         });
+Index: app/src/main/java/com/example/friend_finalproj/TotalObjActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/friend_finalproj/TotalObjActivity.java	(date 1561458304000)
++++ app/src/main/java/com/example/friend_finalproj/TotalObjActivity.java	(date 1561522769497)
+@@ -1,8 +1,10 @@
+ package com.example.friend_finalproj;
+ 
++import android.content.Intent;
+ import android.os.Bundle;
+ import android.support.design.widget.FloatingActionButton;
+ import android.support.design.widget.Snackbar;
++import android.support.v7.widget.CardView;
+ import android.view.View;
+ import android.support.v4.view.GravityCompat;
+ import android.support.v7.app.ActionBarDrawerToggle;
+@@ -16,6 +18,8 @@
+ 
+ public class TotalObjActivity extends AppCompatActivity
+         implements NavigationView.OnNavigationItemSelectedListener {
++    private CardView card1,card2,card3,card4,card5,card6;
++
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+@@ -31,7 +35,18 @@
+         drawer.addDrawerListener(toggle);
+         toggle.syncState();
+         navigationView.setNavigationItemSelectedListener(this);
++
++        card1 = (CardView) findViewById(R.id.card_view1); // creating a CardView and assigning a value.
++        card2 = (CardView) findViewById(R.id.card_view2); // creating a CardView and assigning a value.
++        card3 = (CardView) findViewById(R.id.card_view3); // creating a CardView and assigning a value.
++        card4 = (CardView) findViewById(R.id.card_view4); // creating a CardView and assigning a value.
++        card5 = (CardView) findViewById(R.id.card_view5); // creating a CardView and assigning a value.
++        card6 = (CardView) findViewById(R.id.card_view6); // creating a CardView and assigning a value.
++
+     }
++
++
++
+ 
+     @Override
+     public void onBackPressed() {
+@@ -51,16 +66,14 @@
+ 
+         if (id == R.id.nav_home) {
+             // Handle the camera action
+-        } else if (id == R.id.nav_gallery) {
+-
+-        } else if (id == R.id.nav_slideshow) {
+-
+-        } else if (id == R.id.nav_tools) {
+-
+-        } else if (id == R.id.nav_share) {
+-
+-        } else if (id == R.id.nav_send) {
+-
++            Intent gotohome = new Intent(TotalObjActivity.this,TeachActivity.class);
++            startActivity(gotohome);
++        } else if (id == R.id.nav_obj) {
++            Intent gotoowner = new Intent(TotalObjActivity.this,TotalObjActivity.class);
++            startActivity(gotoowner);
++        } else if (id == R.id.nav_exit) {
++            Intent gotoexit = new Intent(TotalObjActivity.this,MainActivity.class);
++            startActivity(gotoexit);
+         }
+ 
+         DrawerLayout drawer = findViewById(R.id.drawer_layout);
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(date 1561458304000)
++++ app/src/main/res/values/strings.xml	(date 1561521283958)
+@@ -39,20 +39,8 @@
+     <string name="number">โทร</string>
+     <string name="fordb">something by DB</string>
+ 
+-
+     <string name="todo">TODO</string>
+     <string name="title_activity_total_obj">TotalObjActivity</string>
+-    <string name="menu_gallery">Gallery</string>
+-    <string name="menu_slideshow">Slideshow</string>
+-    <string name="menu_tools">Tools</string>
+-    <string name="menu_share">Share</string>
+-    <string name="menu_send">Send</string>
+     <string name="title_activity_teasch_scan">TeaschScanActivity</string>
+-    <string name="todo">TODO</string>
+-    <string name="todo">TODO</string>
+-    <string name="todo">TODO</string>
+-    <string name="todo">TODO</string>
+-    <string name="todo">TODO</string>
+-    <string name="todo">TODO</string>
+ 
+ </resources>
+Index: app/src/main/res/layout/teasch_scan.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/teasch_scan.xml	(date 1561458304000)
++++ app/src/main/res/layout/teasch_scan.xml	(date 1561521856355)
+@@ -20,6 +20,6 @@
+         android:layout_gravity="start"
+         android:fitsSystemWindows="true"
+         app:headerLayout="@layout/nav_header_teach"
+-        app:menu="@menu/teasch_scan_drawer" />
++        app:menu="@menu/activity_teach_drawer" />
+ 
+ </android.support.v4.widget.DrawerLayout>
+Index: app/src/main/java/com/example/friend_finalproj/TeaschScanActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/friend_finalproj/TeaschScanActivity.java	(date 1561458304000)
++++ app/src/main/java/com/example/friend_finalproj/TeaschScanActivity.java	(date 1561522323816)
+@@ -1,18 +1,7 @@
+ package com.example.friend_finalproj;
+ 
+ import android.os.Bundle;
+-import android.support.design.widget.FloatingActionButton;
+-import android.support.design.widget.Snackbar;
+-import android.view.View;
+-import android.support.v4.view.GravityCompat;
+-import android.support.v7.app.ActionBarDrawerToggle;
+-import android.view.MenuItem;
+-import android.support.design.widget.NavigationView;
+-import android.support.v4.widget.DrawerLayout;
+-
+ import android.support.v7.app.AppCompatActivity;
+-import android.support.v7.widget.Toolbar;
+-import android.view.Menu;
+ import android.widget.Button;
+ import android.widget.TextView;
+ import android.widget.Toast;
+@@ -25,8 +14,8 @@
+         implements ZXingScannerView.ResultHandler {
+ 
+     public static final int REQUEST_QR_SCAN = 4;
+-    Button btnScan;
+-    TextView txtResult;
++    private Button btnScan;
++    private TextView txtResult;
+ 
+     private ZXingScannerView mScannerView;
+     private static final int REQUEST_CAMERA = 1;
